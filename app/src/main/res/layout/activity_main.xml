@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Mini Group Assignment"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/welcome"
+        android:layout_alignBottom="@+id/user"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="7dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/a1"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/q1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/a2"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/q2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="0dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/q3"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="417dp"
+        android:text="Is SMS messaging possible through android?" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="52dp"
+        android:text="Enter your name" />
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="119dp"
+        android:text="Name a type of intent" />
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="188dp"
+        android:text="What android widget acts as a drop-down menu?" />
+
+    <EditText
+        android:id="@+id/a3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/q3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="0dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginBottom="338dp"
+        android:onClick="getScore"
+        android:text="Get Score" />
+
+    <ImageButton
+        android:id="@+id/sms"
+        android:layout_width="218dp"
+        android:layout_height="202dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="89dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:onClick="sendSMS"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sms" />
+
+</RelativeLayout>

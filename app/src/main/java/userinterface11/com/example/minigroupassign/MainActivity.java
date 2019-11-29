@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
         String ans3 = a3.getText().toString();
 
         int score = 0;
-        if (ans1.equals("implicit") || ans1.equals("explicit"))
+        if(ans1.equalsIgnoreCase("computer science") || ans1.equalsIgnoreCase("computerscience"))
             score += 1;
 
-        if (ans2.equals("spinner"))
+        if(ans2.equalsIgnoreCase("apple"))
             score += 1;
 
-        if (ans3.equals("yes"))
+        if(ans3.equalsIgnoreCase("bill gates") || ans3.equalsIgnoreCase("billgates"))
             score += 1;
 
         Toast.makeText(this,  userName + " scored " + score +" / 3", Toast.LENGTH_LONG).show();
